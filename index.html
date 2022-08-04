@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LoL Survey Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    
+    <body>
+        <!-- Beginning Part -->
+        <header>
+            <h1 id="title">League of Legends Survey Form</h1>
+            <p id="description">Please help us so we can make the player experience more enjoyable.</p>
+        </header>
+
+        <form id="survey-form">
+
+             
+            <!-- Basic Info-->
+            <fieldset>
+                <label id="name-label">Name <input type="text" id="name" placeholder="John"required></label>
+                <label id="email-label">Email <input type="email" id="email" placeholder="Doe" required></label>
+                <label id="number-label">Age <input type="number" id="number" min="13" max="120" placeholder="Age"></label>
+                <label>What is your main role in League of Legends? 
+                    <select id="dropdown">
+                        <option value="">--Select your role--</option>
+                        <option value="top">Top</option>
+                        <option value="jungle">Jungle</option>
+                        <option value="mid">Mid</option>
+                        <option value="adc">Adc</option>
+                        <option value="support">Support</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <!-- Ask if the person would recommend-->
+            <fieldset>
+                <p>Would you recommend League of Legends to a friend?</p>
+                <label><input type="radio" name="recommendation" value="definitely" class="inline"> Definitely</label>
+                <label><input type="radio" name="recommendation" value="maybe" class="inline"> Maybe</label>
+                <label><input type="radio" name="recommendation" value="no" class="inline"> No</label>
+            </fieldset>
+
+            <!-- Things the player likes-->
+            <fieldset>
+                <label>What is your favorite feature of League of Legends?
+                    <select>
+                        <option value="">Select one of the options</option>
+                        <option value="story">Story</option>
+                        <option value="characters">Characters</option>
+                        <option value="gameplay">Gameplay</option>
+                        <option value="art">Art</option>
+                        <option value="music">Music</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <!-- Things the player wants to see improved -->
+            <fieldset>
+                <p>What would you like to see improved? (Check all that apply)</p>
+                <label><input type="checkbox" name="improvement" value="queue-times" class="inline"> Queue times</label>
+                <label><input type="checkbox" name="improvement" value="matchmaking" class="inline"> Matchmaking</label>
+                <label><input type="checkbox" name="improvement" value="balancing" class="inline"> Balancing</label>
+                <label><input type="checkbox" name="improvmeent" value="player-punishment" class="inline"> Player Punishment</label>
+                <label><input type="checkbox" name="improvement" value="player-feedback" class="inline"> Listening to Player Feedback</label>
+            </fieldset>
+
+            <fieldset>
+                <label>Any comments or suggestions?
+                    <textarea name="comments"></textarea>
+                </label>
+            </fieldset>
+
+            <!-- Final Submission Button-->
+            <input type="submit" id="submit">
+        </form>
+
+    </body>
+</html>
